@@ -13,12 +13,10 @@ class PythagoreUtility
         
         $html .= '<thead>';
         $html .= '<tr>';
-        $html .= '<th style="background-color: #f2f2df; padding: 10px; text-align: center;"></th>'; 
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 0; $i <= 10; $i++) {
             $html .= '<th style="background-color: #f2f2df; padding: 10px; text-align: center;">' . $i . '</th>';
         }
         $html .= '</tr>';
-        $html .= '</thead>';
 
         
         $html .= '<tbody>';
