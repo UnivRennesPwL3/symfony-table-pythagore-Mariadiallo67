@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PythagoreController extends AbstractController
 {
-    private $pythagoreUtility;
+    private PythagoreUtility $pythagoreUtility;
 
     
     public function __construct(PythagoreUtility $pythagoreUtility)
@@ -23,10 +23,9 @@ class PythagoreController extends AbstractController
     public function displayPythagoreAction(): Response
     {
         
-        $pythagoreTable = $this->pythagoreUtility->display();
 
         return $this->render('pythagore/displayPythagore.html.twig', [
-            'pythagoreTable' => $pythagoreTable,  
+            'pythagoreTable' => $this->pythagoreUtility->display(),  
         ]);
     }
 }

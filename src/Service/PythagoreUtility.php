@@ -9,8 +9,7 @@ class PythagoreUtility
     {
        
         $html = '<table border="1" style="border-collapse: collapse; width: 60%; margin: 20px auto;">';
-
-        
+  
         $html .= '<thead>';
         $html .= '<tr>';
         for ($i = 0; $i <= 10; $i++) {
@@ -18,7 +17,6 @@ class PythagoreUtility
         }
         $html .= '</tr>';
 
-        
         $html .= '<tbody>';
         for ($i = 1; $i <= 10; $i++) {
             $html .= '<tr>';
@@ -39,4 +37,3 @@ class PythagoreUtility
         return $html;
     }
 }
-
